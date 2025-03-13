@@ -1,9 +1,13 @@
-.container-conversao2{
+.container-conversorTemp {
+  background-color: rgb(27, 83, 203);
     border-radius: 10%;
     display: flex;
     justify-content: center;
     align-items:   center;
     flex-direction: column;
     padding: 2em;
-    background-color:rgb(63, 242, 13)
+    width: 50%;
+    
+
+
 }

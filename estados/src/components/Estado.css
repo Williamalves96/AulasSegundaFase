@@ -1,9 +1,9 @@
-.container-conversao2{
+.container-estado{
     border-radius: 10%;
     display: flex;
     justify-content: center;
     align-items:   center;
     flex-direction: column;
     padding: 2em;
-    background-color:rgb(63, 242, 13)
+    background-color:chartreuse
 }
