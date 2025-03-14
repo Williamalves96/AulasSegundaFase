@@ -6,6 +6,7 @@ import Estado from "./components/Estado";
 import Aviso from "./components/aviso";
 import ConversorTemp from "./components/ConversorTemp";
 import AnoBissexto from "./components/AnoBissexto";
+import Imc from "./components/imc"; 
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
       <Aviso />
       <ConversorTemp />
       <AnoBissexto />
+      <Imc />
+
     </div>
   );
 }
