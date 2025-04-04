@@ -1,31 +1,26 @@
+import React from "react";
+import "./App.css";
+import Conversao from "./components/Conversao";
+import Conversao2 from "./components/Conversao2";
+import Estado from "./components/Estado";
+import Aviso from "./components/aviso";
+import ConversorTemp from "./components/ConversorTemp";
+import AnoBissexto from "./components/AnoBissexto";
+import Imc from "./components/imc"; 
 
-  import { useState } from 'react'
-  import './App.css'
+function App() {
+  return (
+    <div className="container-app">
+      <Conversao2 />
+      <Conversao />
+      <Estado />
+      <Aviso />
+      <ConversorTemp />
+      <AnoBissexto />
+      <Imc />
 
-  function App() {
-    const [usuario, setUsuario] = useState("Juca ");
-    const [nome, setNome] = useState("Juca");
+    </div>
+  );
+}
 
-
-  function lernome(){
-    let nome = prompt("Digite seu nome")
-    setNome(nome);
-  }
-    function lerUsuario(){
-      let resposta = prompt("digite o novo usuario?")
-      setUsuario(resposta);
-    }
-    return (
-      <>
-        <h1>Estados</h1>
-        Nome: {nome}
-        <div>
-        Usuário: {usuario}
-        </div>
-        <button onClick={lernome}>Alterar nome</button>
-        <button onClick={lerUsuario}> Trocar Usuario </button>
-      </>
-    )
-  }
-
-  export default App
+export default App;
