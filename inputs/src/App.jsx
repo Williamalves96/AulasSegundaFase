@@ -1,22 +1,24 @@
 import { useState } from "react";
 
 import "./App.css";
+// import { useState } from "react";
 
 function App() {
   const [inputUsername, setInputValue] = useState("");
   const [inputPassword, setInputPassword] = useState("");
+  const [mensagemErro, setMensagemErro] = useState(false);
   function efetuarLoguin() {
-
     if (inputUsername === "" || inputPassword === "") {
       alert("Preencha todos os campos");
       return;
-    } 
+    }
 
     if (inputUsername !== "GillBats" || inputPassword !== "1235") {
-      alert("Usuario ou senha invalidos");
+      setMensagemErro(true);
       return;
     } else {
-      alert("Loguin efetuado com sucesso");
+      setMensagemErro(false);
+      alert(`Loguin efetuado com sucesso ${inputUsername}`);
     }
     // Aqui você pode adicionar a lógica para efetuar o loguin
     // Por exemplo, você pode fazer uma requisição para um servidor
@@ -25,8 +27,6 @@ function App() {
     // alert("Loguin efetuado com sucesso");
     // alert(`Loguin efetuado com sucesso ${inputUsername}`);
 
-    
-    alert(`Loguin efetuado com sucesso ${inputUsername}`);
 
   }
   return (
@@ -40,11 +40,20 @@ function App() {
       />
       <label htmlFor="">senha</label>
       <input
-        type="text"
+        type="password"
+        placeholder="Digite sua senha"
+        // value={inputPassword}
+        // onChange={(event) => setInputPassword(event.target.value)}
+        // value={inputPassword}
+        // onChange={(event) => setInputPassword(event.target.value)}
+        // value={inputPassword}
         value={inputPassword}
         onChange={(event) => setInputPassword(event.target.value)}
       />
 
+      {mensagemErro && (
+        <span className="mensagemErro">credenciais invalidas </span>
+      )}
       <button onClick={efetuarLoguin}> Loguin </button>
     </div>
   );
