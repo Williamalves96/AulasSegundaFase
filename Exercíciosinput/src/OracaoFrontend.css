@@ -1,0 +1,22 @@
+.container-oracaoFrontend {
+border-radius: 50px;
+background: #a88080;
+box-shadow:  -20px 20px 60px #8f6d6d,
+             20px -20px 60px #c19393;
+}
+
+
+.container-oracaoFrontend h1 {
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 20px;
+}
+
+.container-oracaoFrontend h2 {
+    color: #fff;
+    font-size: 2rem;
+    text-align: center;
+    padding: 20px;
+}   
+
