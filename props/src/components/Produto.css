@@ -1,0 +1,35 @@
+.container-produto {
+    display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+
+.container-produto h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.container-produto p {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.container-produto img {
+  max-width: 100%;
+  height: auto;
+}
+
+.container-produto button {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+}
+
+.container-produto button:hover {
+  background-color: #0056b3;
+}
