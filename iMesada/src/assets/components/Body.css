@@ -1,0 +1,31 @@
+.container-body {
+    background-color: rgb(224, 215, 188);
+    min-height: calc(100vh - 70px);
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    border-top: 2px ;
+    }
+
+    .botao-credit {
+        background-color: rgb(75, 231, 32); 
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        cursor: pointer;
+        margin: 10px;
+       
+    }
+
+    .botao-debto {
+        background-color: #ff1111; 
+        border: none;
+        color: white;
+        padding: 15px 32px;
+        cursor: pointer;
+    }   
+
+.saldo-simbolo{
+     height: 30px ;
+}
