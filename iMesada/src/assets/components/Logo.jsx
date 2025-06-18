@@ -3,7 +3,13 @@ import "./Logo.css";
 
 function Logo() {
   return (
-    <img src="bergamota-logo.png" alt="iMesada" className="img-bergamota" />
+    <div className="logo-container">
+      <img
+        src="bergamota-logo.png"
+        alt="Logo do iMesada"
+        className="img-bergamota"
+      />
+    </div>
   );
 }
 

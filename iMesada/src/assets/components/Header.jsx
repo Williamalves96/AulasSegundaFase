@@ -4,10 +4,10 @@ import Logo from "./Logo";
 
 function Header() {
   return (
-    <div className="container-header">
+    <header className="container-header">
       <Logo />
       <h1>iMesada</h1>
-    </div>
+    </header>
   );
 }
 
